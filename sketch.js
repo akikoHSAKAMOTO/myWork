@@ -1,11 +1,11 @@
-let fr = 60.0;
-let n = 0;
-let s = 0.15;
-let vr = 0.05;
-let p = new Array();
-let p_size = new Array();
-let p_vel = new Array();
-let p_color = new Array();
+var fr = 60.0;
+var n = 0;
+var s = 0.15;
+var vr = 0.05;
+var p = new Array();
+var p_size = new Array();
+var p_vel = new Array();
+var p_color = new Array();
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -17,7 +17,7 @@ function setup() {
 function draw() {
   clear();
   noStroke();
-  for(let i = 0; i < n; i++){
+  for(var i = 0; i < n; i++){
     p[i].add(p_vel[i]);
     fill(p_color[i], 100, 100, 128);
     ellipse(p[i].x, p[i].y, p_size[i]);
